@@ -48,6 +48,14 @@ cd PhysX-Anything
 
 **Note**: The detailed usage of `setup.sh` can be found at [TRELLIS](https://github.com/microsoft/TRELLIS)
 
+Alternatively, you can use [`uv`](https://github.com/astral-sh/uv) for a faster, conda-free installation:
+
+```bash
+. ./setup_uv.sh --new-env --basic --xformers --flash-attn --diffoctreerast --spconv --mipgaussian --kaolin --nvdiffrast
+```
+
+This creates a `.venv` virtual environment with Python 3.10 and installs `uv` automatically if not present.
+
 3. Install the dependencies for Qwen2.5:
 
 ```bash
